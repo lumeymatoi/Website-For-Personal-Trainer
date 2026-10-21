@@ -5,12 +5,15 @@ A modern and responsive website for a personal trainer, built with HTML5 and CSS
 ---Features---
 
 Personal trainer profile
+
 Training services and benefits
+
 Client testimonials
+
 WhatsApp contact button
+
 Responsive design
 
 ---Technologies---
 
-HTML
-CSS
+HTML and CSS
