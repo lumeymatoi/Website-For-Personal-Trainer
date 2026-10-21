@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background:
+    radial-gradient(circle at 10% 20%, rgba(255, 209, 102, 0.08), transparent 25%),
+    radial-gradient(circle at 90% 70%, rgba(30, 100, 180, 0.12), transparent 30%),
+    #071A33;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav img {
+    width: 160px;
+    height: auto;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.logo {
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.botao-menu {
+    background-color: #FFD166;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.botao-menu:hover {
+    background-color: #0011ff;
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #FFD166;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+h3 {
+    color: #FFD166;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+    background-color: #001b42;
+    color: white;
+}
+
+header,
+footer {
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card-depoimento {
+    background: #0D2747;
+    width: 260px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 209, 102, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.card-depoimento:hover {
+    transform: translateY(-10px);
+    border-color: #FFD166;
+    box-shadow: 0 15px 35px rgba(255, 209, 102, 0.15);
+}
+
+.card-depoimento p {
+    color: #D9E2EC;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.card-depoimento h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-depoimento span {
+    color: #666;
+    font-size: 14px;
+}
+
+.botao-agendar {
+    display: inline-block;
+    background-color: #15ff00;
+    color: #071A33;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.botao-agendar:hover {
+    background-color: #FFD166;
+    color: #071A33;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    color: #D9E2EC;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+main section {
+    animation: aparecer 0.8s ease;
+}
+
+section {
+    position: relative;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 209, 102, 0.08);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sobre-conteudo img {
+    width: 100%;
+    max-width: 420px;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+    object-position: center top;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 209, 102, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease;
+
+}
+
+.sobre-conteudo img:hover {
+    transform: scale(1.03);
+    border-color: #FFD166;
+    box-shadow: 0 15px 40px rgba(255, 209, 102, 0.2);
+}
+
+#beneficios {
+    text-align: center;
+}
+
+#beneficios .subtitulo {
+    color: #D9E2EC;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.beneficios-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card-beneficio {
+    background: #0D2747;
+    width: 260px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 209, 102, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.card-beneficio:hover {
+    transform: translateY(-10px);
+    border-color: #FFD166;
+    box-shadow: 0 15px 35px rgba(255, 209, 102, 0.15);
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    background: #FFD166;
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    transition: 0.3s;
+}
+
+.card-beneficio:hover .icone {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 209, 102, 0.5);
+}
+
+.card-beneficio h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-beneficio p {
+    color: #D9E2EC;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+#servicos {
+    text-align: center;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card-servico {
+    width: 300px;
+    padding: 35px 25px;
+
+    background-color: #0D2747;
+
+    border: 1px solid rgba(255, 209, 102, 0.3);
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+.card-servico:hover {
+    transform: translateY(-10px);
+
+    border-color: #FFD166;
+
+    box-shadow: 0 15px 35px rgba(255, 209, 102, 0.2);
+}
+
+.icone-servico {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFD166;
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    transition: 0.3s;
+}
+
+.card-servico:hover .icone-servico {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 209, 102, 0.5);
+}
+
+.botao-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #25D366;
+    color: #FFFFFF;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+.botao-whatsapp span {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.botao-whatsapp:hover span {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.botao-whatsapp img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+.pagina-404 {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(255, 209, 102, 0.10),
+            transparent 40%
+        ),
+        #071A33;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.erro-container {
+    max-width: 650px;
+    text-align: center;
+}
+
+.erro-codigo {
+    font-size: clamp(100px, 20vw, 180px);
+    font-weight: 900;
+    line-height: 1;
+    color: #FFD166;
+    text-shadow: 0 0 35px rgba(255, 209, 102, 0.2);
+    margin-bottom: 20px;
+}
+
+.erro-container h1 {
+    color: #FFFFFF;
+    font-size: clamp(28px, 5vw, 42px);
+    margin-bottom: 20px;
+}
+
+.erro-descricao {
+    color: #D9E2EC;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.erro-extra {
+    color: #9BAFC7;
+    margin-top: 30px;
+    font-size: 14px;
+}
